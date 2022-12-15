@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #e4e0e0;
+    overflow-x: hidden;
+}
+:root{
+    --grey-text-color: #726666;
+    --red-error-color: #e81123;
+    --grey-text-color-2: #666;
+    --blue-color: #005da6;
+    --blue-color-texts: #0067b8;
+    --microsoft-font: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    --full-white: #fff;
+}
+body .login{
+    width: 450px;
+    height: 340px;
+    background: var(--full-white);
+    margin: 100px auto 20px auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px -10px rgba(128, 123, 123, 0.5), 0 0 10px 0 rgba(128, 123, 123, 0.3);
+}
+body .login-section-details{
+    width: 450px;
+    height: 340px;
+    background: var(--full-white);
+    margin: 0px auto 20px auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px -10px rgba(128, 123, 123, 0.5), 0 0 10px 0 rgba(128, 123, 123, 0.3);
+}
+body .login .cont{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+body .login .cont .title h2{
+    font-family: var(--microsoft-font);
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+}
+body .login .cont form{
+    display: flex;
+    flex-direction: column;
+}
+body .login .cont form .email input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    margin: 0 0 18px 0;
+    height: 36px;
+    font-size: 15px;
+    border-bottom: solid 1px rgb(39, 37, 37);
+    font-family: var(--microsoft-font);
+    background: transparent;
+}
+body .login .cont form .email input:focus{
+    border-bottom: solid 1px var(--blue-color);
+    background: none;
+}
+body .login .cont form .email input:focus:hover{
+    border-bottom: solid 1px rgb(39, 37, 37);
+}
+body .login .cont form .havent{
+    display: flex;
+    font-family: var(--microsoft-font);
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0 0 20px 0;
+}
+body .login .cont form .havent a{
+    text-decoration: none;
+    color: var(--blue-color-texts);
+    margin: 0 0 0 4px;
+}
+body .login .cont form .havent a:hover{
+    text-decoration: underline;
+    color: var(--grey-text-color);
+}
+body .login .cont form .key{
+    font-family: var(--microsoft-font);
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+body .login .cont form .key a{
+    text-decoration: none;
+    color: var(--blue-color-texts);
+}
+body .login .cont form .key svg{
+    margin: 0 0 0 4px;
+    cursor: pointer;
+}
+body .login .cont form .key a:hover{
+    text-decoration: underline;
+    color: var(--grey-text-color);
+}
+body .login .cont form .next{
+    position: relative;
+    width: 100%;
+}
+body .login .cont form .alert-email{
+    font-family: var(--microsoft-font);
+    color: var(--red-error-color);
+    font-size: 0.9375rem;
+}
+body .login .cont form .next button{
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 35px;
+    background: var(--blue-color-texts);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--microsoft-font);
+    cursor: pointer;
+}
+body .login .cont form .next button:hover{
+    background: var(--blue-color);
+}
+body #options{
+    /* Hover color
+    background: rgba(128, 123, 123, 0.5);
+    */
+    background: #fff;
+    width: 450px;
+    height: 45px;
+    margin: 18px auto 20px auto;
+    box-sizing: border-box;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0, .2);
+    transition: all 100ms ease;
+}
+body #options:hover{
+    background-color: #e6e6e6;
+    color: inherit;
+}
+body #options a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #404040;
+    font-family: var(--microsoft-font);
+    font-size: 15px;
+    padding: 0 0 0 40px;
+}
+body #options a svg{
+    margin: 0 10px 0 0;
+}
+body nav{
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+body nav .cont{
+    width: 300px;
+    height: 28px;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    font-size: 12px;
+    align-items: center;
+    font-family: var(--microsoft-font);
+}
+body nav .cont a{
+    text-decoration: none;
+    color: #000;
+}
+body nav .cont .hover-on{
+    transition: 50ms ease;
+}
+body nav .cont .hover-on:hover{
+    text-decoration: underline;
+}
+body nav .cont .setings{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 22px;
+    vertical-align: top;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+body .key-modal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+body .key-modal .cont{
+    width: 520px;
+    height: 315px;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border: solid 1px var(--blue-color);
+    font-family: var(--microsoft-font);
+    padding: 47px 30px 20px 30px;
+}
+body .key-modal .cont .title{
+    display: flex;
+}
+body .key-modal .cont .title > svg{
+    margin: 0 8px 0 0;
+}
+body .key-modal .cont .title h2{
+    font-weight: 500;
+    color: rgb(26, 24, 24);   
+}
+body .key-modal .cont .title h2 .sec-p-h2-class{
+    margin: 8px 0 0 0;
+    transform: translateX(-55px);
+}
+body .key-modal .cont .first-text-p-modal{
+    margin: 15px 0 0 0;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+}
+body .key-modal .cont .second-text-p-modal{
+    margin: 15px 0 0 0;
+    font-size: 0.9105rem;
+    line-height: 1.25rem;
+}
+body .key-modal .cont .second-text-p-modal a{
+    color: var(--blue-color-texts);
+    text-decoration: none;
+}
+body .key-modal .cont .second-text-p-modal a:hover{
+    text-decoration: underline;
+    color: var(--grey-text-color-2);
+}
+body .key-modal .cont .close-modal{
+    border: none;
+    outline: none;
+    background: var(--blue-color-texts);
+    height: 32px;
+    width: 108px;
+    color: #fff;
+    font-family: var(--microsoft-font);
+    font-size: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: background 100ms ease;
+}
+body .key-modal .cont .close-modal:hover{
+    background: var(--blue-color);
+}
+body .transform{
+    transform: translateY(-10px);
+    height: 375px;
+}
+#details{
+    background: #fff;
+    width: 450px;
+    height: 170px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0, .2);
+    padding: 24px 44px;
+    margin: 0 auto;
+}
+#details .cont{
+    font-family: var(--microsoft-font);
+    position: relative;
+}
+#details .cont h3{
+    font-size: 15px;
+}
+#details .cont p{
+    font-size: 13px;
+    color: #404040;
+    margin: 1px 0 0 0;
+}
+#details .cont a{
+    text-decoration: none;
+    color: var(--blue-color-texts);
+    font-size: 13px;
+    cursor: pointer;
+}
+#details .cont a:hover{
+    text-decoration: underline;
+    color: var(--grey-text-color);
+}
+#details .cont .data{
+    margin: 13px 0 0 0;
+}
+#details .cont .data div{
+    display: flex;
+}
+#details .cont .data :is(.information1, .information2) strong{
+    font-size: 13px;
+    margin: 0 4px 0 0;
+}
+#details .cont svg{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px){
+    body{
+        background: #fff;
+    }
+    body :is(.login, .login-section-details){
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+    }
+    body #options{
+        box-shadow: none;
+        border: solid 1px #000;
+        height: 50px;
+        width: 100%;
+        max-width: 400px;
+        min-width: 40%;
+    }
+    body #details{
+        box-shadow: none;
+    }
+    body nav .cont{
+        float: left;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    body #options{
+        box-shadow: none;
+        border: solid 1px #000;
+        height: 50px;
+        width: 100%;
+        max-width: 70%;
+        min-width: 40%;
+    }
+    body .login .cont{
+        padding: 40px 20px 0 20px;
+    }
+    body .login .cont form .next{
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+    body :is(.login, .login-section-details){
+        width: 90%;
+    }
+
+}
+.transition-start{
+    transition: all 500ms ease;
+    animation: transitionstartan 180ms linear;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+}
+@keyframes transitionstartan {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.transition-start-opacity{
+    animation: transitionopacity 180ms linear;
+    animation-delay: 300ms;
+    animation-fill-mode: backwards;
+}
+@keyframes transitionopacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
